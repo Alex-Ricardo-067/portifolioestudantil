@@ -42,17 +42,38 @@
     <section>
         <h2>Contato</h2>
 
-        <form>
+        <form id="contato-form" novalidate>
             <label for="nome">Nome:</label>
-            <input type="text" id="nome">
+            <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome"
+                autocomplete="name"
+                minlength="2"
+                maxlength="60"
+                required
+            >
 
             <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem"></textarea>
+            <textarea
+                id="mensagem"
+                name="mensagem"
+                placeholder="Escreva sua mensagem"
+                minlength="10"
+                maxlength="500"
+                aria-describedby="contador-mensagem"
+                required
+            ></textarea>
+
+            <span id="contador-mensagem" class="contador-mensagem">0 / 500 caracteres</span>
 
             <button type="submit">Enviar</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
         </form>
     </section>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
