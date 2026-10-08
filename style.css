@@ -12,6 +12,34 @@
     --sombra: 0 18px 45px rgba(0, 0, 0, 0.32);
 }
 
+.tema-claro {
+    --preto: #f4f7fb;
+    --preto-suave: #ffffff;
+    --cinza-escuro: #e8edf5;
+    --cinza-medio: #cbd5e1;
+    --cinza-claro: #475569;
+    --branco: #1e293b;
+    --azul-claro: #58a6ff;
+    --azul-escuro: #1261ad;
+    --borda: rgba(88, 166, 255, 0.22);
+    --sombra: 0 18px 45px rgba(0, 0, 0, 0.32);
+}
+
+.tema-claro header {
+    background: linear-gradient(135deg, #dbeafe 0%, #ffffff 70%);
+}
+
+.tema-claro input,
+.tema-claro textarea {
+    background-color: #ffffff;
+    color: #1e293b;
+}
+
+.tema-claro input:focus,
+.tema-claro textarea:focus {
+    background-color: #f8fafc;
+}
+
 * {
     box-sizing: border-box;
 }
